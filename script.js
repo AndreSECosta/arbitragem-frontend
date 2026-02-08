@@ -1,7 +1,8 @@
 const API = 'https://arbitragem-cripto-backend-production.up.railway.app';
 
 async function loadArbitrage() {
-  const res = await fetch(`${API}/arbitragem`);
+  const res = await fetch('https://arbitragem-cripto-backend-production.up.railway.app/arbitragem')
+;
   const data = await res.json();
 
   const cards = document.getElementById('cards');
